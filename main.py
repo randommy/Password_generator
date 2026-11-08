@@ -8,7 +8,7 @@ MAX_LENGTH = 128
 
 
 def generate_password(length: int) -> str:
-    """Generate a cryptographically secure random password."""
+    """Generate a password"""
 
     alphabet = (
         string.ascii_letters
@@ -25,24 +25,23 @@ def generate_password(length: int) -> str:
 
 
 def get_password_length() -> int:
-    """Get and validate password length from user."""
 
     while True:
         try:
             length = int(input("Enter password length: "))
 
             if length < MIN_LENGTH:
-                print(f"Minimum password length is {MIN_LENGTH}.")
+                print(f"Minimum password length -->>  {MIN_LENGTH}.")
                 continue
 
             if length > MAX_LENGTH:
-                print(f"Maximum password length is {MAX_LENGTH}.")
+                print(f"Maximum length is {MAX_LENGTH}.")
                 continue
 
             return length
 
         except ValueError:
-            print("Invalid input. Please enter an integer.")
+            print("Invalid input. Pls enter an integer")
 
 
 def main():
