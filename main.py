@@ -5,7 +5,6 @@ import string
 MIN_LENGTH = 8
 MAX_LENGTH = 128
 
-
 def gen_password(
     length: int,
     use_uppercase: bool,
@@ -60,7 +59,6 @@ def get_password_length() -> int:
 def options() -> tuple[bool, bool, bool, bool]:
 
     print("\n<<< CHARACTER SELECTION =>>")
-
     use_uppercase = input("Include uppercase letters? (y/n): ").lower() == "y"
     use_lowercase = input("Include lowercase letters? (y/n): ").lower() == "y"
     use_digits = input("Include digits? (y/n): ").lower() == "y"
