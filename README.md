@@ -1,6 +1,4 @@
-# Secure Password Generator
-
-A cryptographically secure password generator built with Python.
+#Password Generator
 
 ## Features
 
@@ -8,10 +6,3 @@ A cryptographically secure password generator built with Python.
 - Custom password length
 - Character selection
 - Input validation
-
-## Technologies
-
-- Python
-- secrets
-- string
-- Git
